@@ -69,7 +69,7 @@ spec:
       serviceAccountName: elasticsearch-logging
       containers:
         - name: elasticsearch-logging
-          image: skillshare/elasticsearch-logging:latest
+          image: interlincx/elasticsearch-logging:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 9200
@@ -92,7 +92,7 @@ spec:
             requests:
               cpu: 100m
         - name: curator
-          image: skillshare/elasticsearch-curator:latest
+          image: interlincx/elasticsearch-curator:latest
           imagePullPolicy: Always
           env:
             - name: DAYS
