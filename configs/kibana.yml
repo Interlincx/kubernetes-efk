@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: kibana-logging
-          image: skillshare/kibana-logging:latest
+          image: interlincx/kibana-logging:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5601
